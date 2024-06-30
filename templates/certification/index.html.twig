@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CertificationController!{% endblock %}
+
+{% block body %}
+
+{% for certification in certifications %}
+
+{%  include 'partials/certification.html.twig' %}
+
+{% endfor %}
+
+{% endblock %}

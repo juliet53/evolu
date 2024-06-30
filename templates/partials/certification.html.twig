@@ -1,0 +1,24 @@
+<div class="container mt-5 ">
+    <div class="row justify-content-center">
+        <div class="col-md-10 mb-3">
+            <div class="card shadow-lg" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center bg-light p-2">
+                        <img src="{{ vich_uploader_asset(certification, 'imageFile') }}" class="img-fluid rounded" alt="Certification Image" style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body d-flex flex-column justify-content-center p-3">
+                            <h5 class="card-title text-primary mb-2">{{ certification.nom }}</h5>
+                           
+                            <p class="card-text text-secondary small mb-2">{{ certification.matiere }}</p>
+                            <p class="card-text text-secondary small mb-2">{{ certification.enseignant }}</p>
+                            <a href="{{path('app_certification_show',{'id': certification.id})}}" class="btn btn-primary align-self-start mt-3">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

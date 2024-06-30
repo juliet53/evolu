@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Evolu{% endblock %}
+
+{% block body %}
+<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-5">
+        <img src="{{asset('build/images/OIP.jpeg')}}" class="d-block mx-lg-auto img-fluid rounded"  width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bienvenue sur mon blog de formations complémentaires en cybersécurité et développement web</h1>
+        <p class="lead">Bienvenue sur mon site dédié à l'exploration des formations complémentaires en cybersécurité et développement web ! Ici, je partage mes découvertes et mes choix de formations pour renforcer mes compétences dans ces domaines cruciaux et en constante évolution. Que ce soit pour apprendre à sécuriser efficacement les systèmes informatiques contre les cybermenaces ou pour perfectionner mes compétences en développement web, vous trouverez ici une sélection soigneusement étudiée de parcours et de cours recommandés.</p>
+        
+      </div>
+    </div>
+
+
+
+{% for certification in certification %}
+
+{%  include 'partials/certification.html.twig' %}
+
+{% endfor %}
+
+{% endblock %}
